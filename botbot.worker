@@ -1,0 +1,11 @@
+# define the runtime language
+runtime "ruby"
+# exec is the file that will be executed:
+exec "botbot.rb"
+
+file "twitter_init.rb"
+file "markov.rb"
+
+gem 'twitter'
+gem 'punkt-segmenter'
+gem 'htmlentities'
